@@ -1,2 +1,4 @@
 myenv_3_10/
 data/
+.ipynb_checkpoints/
+__pycache__/

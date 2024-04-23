@@ -25,10 +25,6 @@ from pathlib import Path
 from PIL import Image
 from tqdm.auto import tqdm
 from typing import Dict,List
-from sklearn.model_selection import train_test_split
-from sklearn.calibration import CalibratedClassifierCV, calibration_curve
-from sklearn.calibration import CalibratedClassifierCV, calibration_curve
-from sklearn.base import BaseEstimator
 
 from avalanche.benchmarks.generators import nc_benchmark, ni_benchmark, dataset_benchmark, filelist_benchmark, dataset_benchmark, tensors_benchmark, paths_benchmark
 from avalanche.evaluation import Metric, PluginMetric
@@ -87,19 +83,18 @@ class AccMetric(Metric[float]):
         """
         true_y = torch.as_tensor(true_y)
         predicted_y = torch.as_tensor(predicted_y)
-        predicted_y = torch.max(predicted_y,1)[1]
 
-        #if len(true_y) != len(predicted_y):
-           # raise ValueError("Size mismatch for true_y and predicted_y tensors")
+        if len(true_y) != len(predicted_y):
+            raise ValueError("Size mismatch for true_y and predicted_y tensors")
 
         # Check if logits or labels
-        #if len(predicted_y.shape) > 1:
+        if len(predicted_y.shape) > 1:
             # Logits -> transform to labels
-            #predicted_y = torch.max(predicted_y, 1)[1]
+            predicted_y = torch.max(predicted_y, 1)[1]
 
-        #if len(true_y.shape) > 1:
+        if len(true_y.shape) > 1:
             # Logits -> transform to labels
-            #true_y = torch.max(true_y, 1)[1]
+            true_y = torch.max(true_y, 1)[1]
 
         self._torchmetrics_acc.update(predicted_y, true_y)
 
@@ -113,7 +108,7 @@ class AccMetric(Metric[float]):
         """
         Reset your metric here
         """
-        return None
+        return self._torchmetrics_acc.reset()
 
 class AUROCMetric(Metric[float]):
     """
@@ -133,19 +128,21 @@ class AUROCMetric(Metric[float]):
         """
         true_y = torch.as_tensor(true_y)
         predicted_y = torch.as_tensor(predicted_y)
-        predicted_y = torch.max(predicted_y,1)[1]
 
-        #if len(true_y) != len(predicted_y):
-           # raise ValueError("Size mismatch for true_y and predicted_y tensors")
+        if len(true_y) != len(predicted_y):
+            raise ValueError("Size mismatch for true_y and predicted_y tensors")
 
         # Check if logits or labels
-        #if len(predicted_y.shape) > 1:
+        if len(predicted_y.shape) > 1:
             # Logits -> transform to labels
             #predicted_y = torch.max(predicted_y, 1)[1]
+            predicted_y = softmax(predicted_y, dim=1)
+            predicted_y = predicted_y[:,1]
+            #print(predicted_y)
 
-        #if len(true_y.shape) > 1:
+        if len(true_y.shape) > 1:
             # Logits -> transform to labels
-            #true_y = torch.max(true_y, 1)[1]
+            true_y = torch.max(true_y, 1)[1]
 
         self._torchmetrics_AUROC.update(predicted_y, true_y)
 
@@ -159,7 +156,7 @@ class AUROCMetric(Metric[float]):
         """
         Reset your metric here
         """
-        return None
+        return self._torchmetrics_AUROC.reset()
 
 class ECEMetric(Metric[float]):
     """
@@ -179,22 +176,23 @@ class ECEMetric(Metric[float]):
         """
         true_y = torch.as_tensor(true_y)
         predicted_y = torch.as_tensor(predicted_y)
-        probabilities = softmax(predicted_y, dim=1)
-        positive_class_probabilities = probabilities[:, 1]
 
-        #if len(true_y) != len(predicted_y):
-           # raise ValueError("Size mismatch for true_y and predicted_y tensors")
+        if len(true_y) != len(predicted_y):
+            raise ValueError("Size mismatch for true_y and predicted_y tensors")
 
         # Check if logits or labels
-        #if len(predicted_y.shape) > 1:
+        if len(predicted_y.shape) > 1:
             # Logits -> transform to labels
             #predicted_y = torch.max(predicted_y, 1)[1]
+            predicted_y = softmax(predicted_y, dim=1)
+            predicted_y = predicted_y[:,1]
+            #print(predicted_y)
 
-        #if len(true_y.shape) > 1:
+        if len(true_y.shape) > 1:
             # Logits -> transform to labels
-            #true_y = torch.max(true_y, 1)[1]
+            true_y = torch.max(true_y, 1)[1]
 
-        self._torchmetrics_ECE.update(positive_class_probabilities, true_y)
+        self._torchmetrics_ECE.update(predicted_y, true_y)
 
     def result(self) -> float:
         """
@@ -206,7 +204,7 @@ class ECEMetric(Metric[float]):
         """
         Reset your metric here
         """
-        return None
+        return self._torchmetrics_ECE.reset()
 
 class F1Metric(Metric[float]):
     """
@@ -226,19 +224,18 @@ class F1Metric(Metric[float]):
         """
         true_y = torch.as_tensor(true_y)
         predicted_y = torch.as_tensor(predicted_y)
-        predicted_y = torch.max(predicted_y,1)[1]
 
-        #if len(true_y) != len(predicted_y):
-           # raise ValueError("Size mismatch for true_y and predicted_y tensors")
+        if len(true_y) != len(predicted_y):
+            raise ValueError("Size mismatch for true_y and predicted_y tensors")
 
         # Check if logits or labels
-        #if len(predicted_y.shape) > 1:
+        if len(predicted_y.shape) > 1:
             # Logits -> transform to labels
-            #predicted_y = torch.max(predicted_y, 1)[1]
+            predicted_y = torch.max(predicted_y, 1)[1]
 
-        #if len(true_y.shape) > 1:
+        if len(true_y.shape) > 1:
             # Logits -> transform to labels
-            #true_y = torch.max(true_y, 1)[1]
+            true_y = torch.max(true_y, 1)[1]
 
         self._torchmetrics_F1.update(predicted_y, true_y)
 
@@ -252,7 +249,7 @@ class F1Metric(Metric[float]):
         """
         Reset your metric here
         """
-        return None
+        return self._torchmetrics_F1.reset()
 
 class JaccardMetric(Metric[float]):
     """
@@ -272,19 +269,18 @@ class JaccardMetric(Metric[float]):
         """
         true_y = torch.as_tensor(true_y)
         predicted_y = torch.as_tensor(predicted_y)
-        predicted_y = torch.max(predicted_y,1)[1]
 
-        #if len(true_y) != len(predicted_y):
-           # raise ValueError("Size mismatch for true_y and predicted_y tensors")
+        if len(true_y) != len(predicted_y):
+            raise ValueError("Size mismatch for true_y and predicted_y tensors")
 
         # Check if logits or labels
-        #if len(predicted_y.shape) > 1:
+        if len(predicted_y.shape) > 1:
             # Logits -> transform to labels
-            #predicted_y = torch.max(predicted_y, 1)[1]
+            predicted_y = torch.max(predicted_y, 1)[1]
 
-        #if len(true_y.shape) > 1:
+        if len(true_y.shape) > 1:
             # Logits -> transform to labels
-            #true_y = torch.max(true_y, 1)[1]
+            true_y = torch.max(true_y, 1)[1]
 
         self._torchmetrics_Jaccard.update(predicted_y, true_y)
 
@@ -298,7 +294,7 @@ class JaccardMetric(Metric[float]):
         """
         Reset your metric here
         """
-        return None
+        return self._torchmetrics_Jaccard.reset()
 
 class HammingMetric(Metric[float]):
     """
@@ -309,7 +305,6 @@ class HammingMetric(Metric[float]):
         Initialize your metric here
         """
         super().__init__()
-        device = "cuda" if torch.cuda.is_available() else "cpu"
         self._torchmetrics_Hamming = TM_Hamming(task="binary").to(device)
         
     @torch.no_grad()
@@ -319,19 +314,18 @@ class HammingMetric(Metric[float]):
         """
         true_y = torch.as_tensor(true_y)
         predicted_y = torch.as_tensor(predicted_y)
-        predicted_y = torch.max(predicted_y,1)[1]
 
-        #if len(true_y) != len(predicted_y):
-           # raise ValueError("Size mismatch for true_y and predicted_y tensors")
+        if len(true_y) != len(predicted_y):
+            raise ValueError("Size mismatch for true_y and predicted_y tensors")
 
         # Check if logits or labels
-        #if len(predicted_y.shape) > 1:
+        if len(predicted_y.shape) > 1:
             # Logits -> transform to labels
-            #predicted_y = torch.max(predicted_y, 1)[1]
+            predicted_y = torch.max(predicted_y, 1)[1]
 
-        #if len(true_y.shape) > 1:
+        if len(true_y.shape) > 1:
             # Logits -> transform to labels
-            #true_y = torch.max(true_y, 1)[1]
+            true_y = torch.max(true_y, 1)[1]
 
         self._torchmetrics_Hamming.update(predicted_y, true_y)
 
@@ -345,7 +339,7 @@ class HammingMetric(Metric[float]):
         """
         Reset your metric here
         """
-        return None
+        return self._torchmetrics_Hamming.reset()
 
 from avalanche.evaluation import PluginMetric
 #from avalanche.evaluation.metrics import Accuracy
@@ -460,7 +454,7 @@ class TorchmetricsAUROCPluginMetric(PluginMetric[float]):
     def __str__(self):
         return "AUROC_Epoch"
 
-from avalanche.evaluation import PluginMetric
+from avalanche.evaluation import PluginMetric, GenericPluginMetric
 from avalanche.evaluation.metric_results import MetricValue
 from avalanche.evaluation.metric_utils import get_metric_name
 
@@ -489,6 +483,31 @@ class TorchmetricsAccuracyPluginMetric(PluginMetric[float]):
     def __str__(self):
         return "Binary_Accuracy_Epoch"
 
+class TorchmetricsAccuracyGenericPluginMetric(GenericPluginMetric[float, AccMetric]):
+    """
+    Base class for all accuracies plugin metrics
+    """
+
+    def __init__(self, reset_at, emit_at, mode, split_by_task=False):
+        """Creates the Accuracy plugin
+
+        :param reset_at:
+        :param emit_at:
+        :param mode:
+        :param split_by_task: whether to compute task-aware accuracy or not.
+        """
+        super().__init__(AccMetric(), reset_at=reset_at, emit_at=emit_at, mode=mode)
+
+    def reset(self) -> None:
+        self._metric.reset()
+
+    def result(self) -> float:
+        return self._metric.result()
+
+    def update(self, strategy):
+        self._metric.update(strategy.mb_output, strategy.mb_y)
+    
+
 
 class TorchmetricsECEPluginMetric(PluginMetric[float]):
     def __init__(self):
@@ -515,6 +534,30 @@ class TorchmetricsECEPluginMetric(PluginMetric[float]):
     def __str__(self):
         return "ECE_Accuracy_Epoch"
 
+class TorchmetricsECEGenericPluginMetric(GenericPluginMetric[float, ECEMetric]):
+    """
+    Base class for all accuracies plugin metrics
+    """
+
+    def __init__(self, reset_at, emit_at, mode, split_by_task=False):
+        """Creates the Accuracy plugin
+
+        :param reset_at:
+        :param emit_at:
+        :param mode:
+        :param split_by_task: whether to compute task-aware accuracy or not.
+        """
+        super().__init__(ECEMetric(), reset_at=reset_at, emit_at=emit_at, mode=mode)
+
+    def reset(self) -> None:
+        self._metric.reset()
+
+    def result(self) -> float:
+        return self._metric.result()
+
+    def update(self, strategy):
+        self._metric.update(strategy.mb_output, strategy.mb_y)
+
 class TorchmetricsF1PluginMetric(PluginMetric[float]):
     def __init__(self):
         super().__init__()
@@ -539,6 +582,30 @@ class TorchmetricsF1PluginMetric(PluginMetric[float]):
 
     def __str__(self):
         return "F1_Accuracy_Epoch"
+
+class TorchmetricsF1GenericPluginMetric(GenericPluginMetric[float, F1Metric]):
+    """
+    Base class for all accuracies plugin metrics
+    """
+
+    def __init__(self, reset_at, emit_at, mode, split_by_task=False):
+        """Creates the Accuracy plugin
+
+        :param reset_at:
+        :param emit_at:
+        :param mode:
+        :param split_by_task: whether to compute task-aware accuracy or not.
+        """
+        super().__init__(F1Metric(), reset_at=reset_at, emit_at=emit_at, mode=mode)
+
+    def reset(self) -> None:
+        self._metric.reset()
+
+    def result(self) -> float:
+        return self._metric.result()
+
+    def update(self, strategy):
+        self._metric.update(strategy.mb_output, strategy.mb_y)
 
 class TorchmetricsJaccardPluginMetric(PluginMetric[float]):
     def __init__(self):
@@ -565,6 +632,30 @@ class TorchmetricsJaccardPluginMetric(PluginMetric[float]):
     def __str__(self):
         return "Jaccard_Accuracy_Epoch"
 
+class TorchmetricsJaccardGenericPluginMetric(GenericPluginMetric[float, JaccardMetric]):
+    """
+    Base class for all accuracies plugin metrics
+    """
+
+    def __init__(self, reset_at, emit_at, mode, split_by_task=False):
+        """Creates the Accuracy plugin
+
+        :param reset_at:
+        :param emit_at:
+        :param mode:
+        :param split_by_task: whether to compute task-aware accuracy or not.
+        """
+        super().__init__(JaccardMetric(), reset_at=reset_at, emit_at=emit_at, mode=mode)
+
+    def reset(self) -> None:
+        self._metric.reset()
+
+    def result(self) -> float:
+        return self._metric.result()
+
+    def update(self, strategy):
+        self._metric.update(strategy.mb_output, strategy.mb_y)
+
 class TorchmetricsHammingPluginMetric(PluginMetric[float]):
     def __init__(self):
         super().__init__()
@@ -589,3 +680,117 @@ class TorchmetricsHammingPluginMetric(PluginMetric[float]):
 
     def __str__(self):
         return "Hamming_Accuracy_Epoch"
+
+class TorchmetricsHammingPluginMetric(GenericPluginMetric[float, HammingMetric]):
+    """
+    Base class for all accuracies plugin metrics
+    """
+
+    def __init__(self, reset_at, emit_at, mode, split_by_task=False):
+        """Creates the Accuracy plugin
+
+        :param reset_at:
+        :param emit_at:
+        :param mode:
+        :param split_by_task: whether to compute task-aware accuracy or not.
+        """
+        super().__init__(HammingMetric(), reset_at=reset_at, emit_at=emit_at, mode=mode)
+
+    def reset(self) -> None:
+        self._metric.reset()
+
+    def result(self) -> float:
+        return self._metric.result()
+
+    def update(self, strategy):
+        self._metric.update(strategy.mb_output, strategy.mb_y)
+
+class ExperienceAccuracyGeneral(TorchmetricsAccuracyGenericPluginMetric):
+    """
+    At the end of each experience, this plugin metric reports
+    the average accuracy over all patterns seen in that experience.
+    This metric only works at eval time.
+    """
+
+    def __init__(self):
+        """
+        Creates an instance of ExperienceAccuracy metric
+        """
+        super(ExperienceAccuracyGeneral, self).__init__(
+            reset_at="experience", emit_at="experience", mode="eval"
+        )
+
+    def __str__(self):
+        return "General_Acc_Exp"
+
+class ExperienceECEGeneral(TorchmetricsECEGenericPluginMetric):
+    """
+    At the end of each experience, this plugin metric reports
+    the average accuracy over all patterns seen in that experience.
+    This metric only works at eval time.
+    """
+
+    def __init__(self):
+        """
+        Creates an instance of ExperienceAccuracy metric
+        """
+        super(ExperienceECEGeneral, self).__init__(
+            reset_at="experience", emit_at="experience", mode="eval"
+        )
+
+    def __str__(self):
+        return "General_ECE_Exp"
+
+class ExperienceF1General(TorchmetricsF1GenericPluginMetric):
+    """
+    At the end of each experience, this plugin metric reports
+    the average accuracy over all patterns seen in that experience.
+    This metric only works at eval time.
+    """
+
+    def __init__(self):
+        """
+        Creates an instance of ExperienceAccuracy metric
+        """
+        super(ExperienceF1General, self).__init__(
+            reset_at="experience", emit_at="experience", mode="eval"
+        )
+
+    def __str__(self):
+        return "General_F1_Exp"
+
+class ExperienceJaccardGeneral(TorchmetricsJaccardGenericPluginMetric):
+    """
+    At the end of each experience, this plugin metric reports
+    the average accuracy over all patterns seen in that experience.
+    This metric only works at eval time.
+    """
+
+    def __init__(self):
+        """
+        Creates an instance of ExperienceAccuracy metric
+        """
+        super(ExperienceJaccardGeneral, self).__init__(
+            reset_at="experience", emit_at="experience", mode="eval"
+        )
+
+    def __str__(self):
+        return "General_Jaccard_Exp"
+
+class ExperienceHammingGeneral(TorchmetricsHammingPluginMetric):
+    """
+    At the end of each experience, this plugin metric reports
+    the average accuracy over all patterns seen in that experience.
+    This metric only works at eval time.
+    """
+
+    def __init__(self):
+        """
+        Creates an instance of ExperienceAccuracy metric
+        """
+        super(ExperienceHammingGeneral, self).__init__(
+            reset_at="experience", emit_at="experience", mode="eval"
+        )
+
+    def __str__(self):
+        return "General_Hamming_Exp"
