@@ -415,3 +415,842 @@ Epoch 0 ended.
 	General_F1_Exp/eval_phase/test_stream/Task001/Exp000 = 0.7407
 	General_Hamming_Exp/eval_phase/test_stream/Task001/Exp000 = 0.1958
 	General_Jaccard_Exp/eval_phase/test_stream/Task001/Exp000 = 0.5882
+-- >> Start of training phase << --
+-- Starting training on experience 0 (Task 1) from train stream --
+Epoch 0 ended.
+	Loss_Epoch/train_phase/train_stream/Task001 = 0.4329
+Epoch 1 ended.
+	Loss_Epoch/train_phase/train_stream/Task001 = 0.0393
+Epoch 2 ended.
+	Loss_Epoch/train_phase/train_stream/Task001 = 0.0068
+Epoch 3 ended.
+	Loss_Epoch/train_phase/train_stream/Task001 = 0.0042
+Epoch 4 ended.
+	Loss_Epoch/train_phase/train_stream/Task001 = 0.0022
+Epoch 5 ended.
+	Loss_Epoch/train_phase/train_stream/Task001 = 0.0013
+Epoch 6 ended.
+	Loss_Epoch/train_phase/train_stream/Task001 = 0.0012
+Epoch 7 ended.
+	Loss_Epoch/train_phase/train_stream/Task001 = 0.0008
+Epoch 8 ended.
+	Loss_Epoch/train_phase/train_stream/Task001 = 0.0008
+Epoch 9 ended.
+	Loss_Epoch/train_phase/train_stream/Task001 = 0.0006
+-- >> End of training phase << --
+-- >> Start of eval phase << --
+-- Starting eval on experience 0 (Task 1) from test stream --
+> Eval on experience 0 (Task 1) from test stream ended.
+	General_Acc_Exp/eval_phase/test_stream/Task001/Exp000 = 0.9860
+	General_ECE_Exp/eval_phase/test_stream/Task001/Exp000 = 0.0133
+	General_F1_Exp/eval_phase/test_stream/Task001/Exp000 = 0.9762
+	General_Hamming_Exp/eval_phase/test_stream/Task001/Exp000 = 0.0140
+	General_Jaccard_Exp/eval_phase/test_stream/Task001/Exp000 = 0.9535
+	Loss_Exp/eval_phase/test_stream/Task001/Exp000 = 0.0422
+	Top1_Acc_Exp/eval_phase/test_stream/Task001/Exp000 = 0.9860
+-- Starting eval on experience 1 (Task 2) from test stream --
+> Eval on experience 1 (Task 2) from test stream ended.
+	General_Acc_Exp/eval_phase/test_stream/Task002/Exp001 = 0.8493
+	General_ECE_Exp/eval_phase/test_stream/Task002/Exp001 = 0.1447
+	General_F1_Exp/eval_phase/test_stream/Task002/Exp001 = 0.7800
+	General_Hamming_Exp/eval_phase/test_stream/Task002/Exp001 = 0.1507
+	General_Jaccard_Exp/eval_phase/test_stream/Task002/Exp001 = 0.6393
+	Loss_Exp/eval_phase/test_stream/Task002/Exp001 = 0.4821
+	Top1_Acc_Exp/eval_phase/test_stream/Task002/Exp001 = 0.8493
+-- Starting eval on experience 2 (Task 3) from test stream --
+> Eval on experience 2 (Task 3) from test stream ended.
+	General_Acc_Exp/eval_phase/test_stream/Task003/Exp002 = 0.4077
+	General_ECE_Exp/eval_phase/test_stream/Task003/Exp002 = 0.5539
+	General_F1_Exp/eval_phase/test_stream/Task003/Exp002 = 0.3304
+	General_Hamming_Exp/eval_phase/test_stream/Task003/Exp002 = 0.5923
+	General_Jaccard_Exp/eval_phase/test_stream/Task003/Exp002 = 0.1979
+	Loss_Exp/eval_phase/test_stream/Task003/Exp002 = 2.6100
+	Top1_Acc_Exp/eval_phase/test_stream/Task003/Exp002 = 0.4077
+-- Starting eval on experience 3 (Task 4) from test stream --
+> Eval on experience 3 (Task 4) from test stream ended.
+	General_Acc_Exp/eval_phase/test_stream/Task004/Exp003 = 0.5541
+	General_ECE_Exp/eval_phase/test_stream/Task004/Exp003 = 0.3925
+	General_F1_Exp/eval_phase/test_stream/Task004/Exp003 = 0.2256
+	General_Hamming_Exp/eval_phase/test_stream/Task004/Exp003 = 0.4459
+	General_Jaccard_Exp/eval_phase/test_stream/Task004/Exp003 = 0.1271
+	Loss_Exp/eval_phase/test_stream/Task004/Exp003 = 1.4341
+	Top1_Acc_Exp/eval_phase/test_stream/Task004/Exp003 = 0.5541
+-- Starting eval on experience 4 (Task 5) from test stream --
+> Eval on experience 4 (Task 5) from test stream ended.
+	General_Acc_Exp/eval_phase/test_stream/Task005/Exp004 = 0.6894
+	General_ECE_Exp/eval_phase/test_stream/Task005/Exp004 = 0.2897
+	General_F1_Exp/eval_phase/test_stream/Task005/Exp004 = 0.7340
+	General_Hamming_Exp/eval_phase/test_stream/Task005/Exp004 = 0.3106
+	General_Jaccard_Exp/eval_phase/test_stream/Task005/Exp004 = 0.5798
+	Loss_Exp/eval_phase/test_stream/Task005/Exp004 = 0.9815
+	Top1_Acc_Exp/eval_phase/test_stream/Task005/Exp004 = 0.6894
+-- Starting eval on experience 5 (Task 6) from test stream --
+> Eval on experience 5 (Task 6) from test stream ended.
+	General_Acc_Exp/eval_phase/test_stream/Task006/Exp005 = 0.8079
+	General_ECE_Exp/eval_phase/test_stream/Task006/Exp005 = 0.1568
+	General_F1_Exp/eval_phase/test_stream/Task006/Exp005 = 0.8000
+	General_Hamming_Exp/eval_phase/test_stream/Task006/Exp005 = 0.1921
+	General_Jaccard_Exp/eval_phase/test_stream/Task006/Exp005 = 0.6667
+	Loss_Exp/eval_phase/test_stream/Task006/Exp005 = 0.5356
+	Top1_Acc_Exp/eval_phase/test_stream/Task006/Exp005 = 0.8079
+-- Starting eval on experience 6 (Task 7) from test stream --
+> Eval on experience 6 (Task 7) from test stream ended.
+	General_Acc_Exp/eval_phase/test_stream/Task007/Exp006 = 0.8194
+	General_ECE_Exp/eval_phase/test_stream/Task007/Exp006 = 0.1647
+	General_F1_Exp/eval_phase/test_stream/Task007/Exp006 = 0.8040
+	General_Hamming_Exp/eval_phase/test_stream/Task007/Exp006 = 0.1806
+	General_Jaccard_Exp/eval_phase/test_stream/Task007/Exp006 = 0.6723
+	Loss_Exp/eval_phase/test_stream/Task007/Exp006 = 0.5057
+	Top1_Acc_Exp/eval_phase/test_stream/Task007/Exp006 = 0.8194
+-- >> End of eval phase << --
+	ConfusionMatrix_Stream/eval_phase/test_stream = 
+tensor([[568,  11],
+        [326, 351]])
+	Loss_Stream/eval_phase/test_stream/Task007 = 0.9052
+	StreamForgetting/eval_phase/test_stream = 0.0000
+-- >> Start of training phase << --
+-- Starting training on experience 1 (Task 2) from train stream --
+Epoch 0 ended.
+	Loss_Epoch/train_phase/train_stream/Task002 = 0.1137
+Epoch 1 ended.
+	Loss_Epoch/train_phase/train_stream/Task002 = 0.0067
+-- >> End of training phase << --
+-- >> Start of eval phase << --
+-- Starting eval on experience 0 (Task 1) from test stream --
+> Eval on experience 0 (Task 1) from test stream ended.
+	ExperienceForgetting/eval_phase/test_stream/Task001/Exp000 = 0.0769
+	General_Acc_Exp/eval_phase/test_stream/Task001/Exp000 = 0.9091
+	General_ECE_Exp/eval_phase/test_stream/Task001/Exp000 = 0.0871
+	General_F1_Exp/eval_phase/test_stream/Task001/Exp000 = 0.8571
+	General_Hamming_Exp/eval_phase/test_stream/Task001/Exp000 = 0.0909
+	General_Jaccard_Exp/eval_phase/test_stream/Task001/Exp000 = 0.7500
+	Loss_Exp/eval_phase/test_stream/Task001/Exp000 = 0.3040
+	Top1_Acc_Exp/eval_phase/test_stream/Task001/Exp000 = 0.9091
+-- Starting eval on experience 1 (Task 2) from test stream --
+> Eval on experience 1 (Task 2) from test stream ended.
+	General_Acc_Exp/eval_phase/test_stream/Task002/Exp001 = 0.9795
+	General_ECE_Exp/eval_phase/test_stream/Task002/Exp001 = 0.0188
+	General_F1_Exp/eval_phase/test_stream/Task002/Exp001 = 0.9756
+	General_Hamming_Exp/eval_phase/test_stream/Task002/Exp001 = 0.0205
+	General_Jaccard_Exp/eval_phase/test_stream/Task002/Exp001 = 0.9524
+	Loss_Exp/eval_phase/test_stream/Task002/Exp001 = 0.0489
+	Top1_Acc_Exp/eval_phase/test_stream/Task002/Exp001 = 0.9795
+-- Starting eval on experience 2 (Task 3) from test stream --
+> Eval on experience 2 (Task 3) from test stream ended.
+	General_Acc_Exp/eval_phase/test_stream/Task003/Exp002 = 0.7615
+	General_ECE_Exp/eval_phase/test_stream/Task003/Exp002 = 0.2048
+	General_F1_Exp/eval_phase/test_stream/Task003/Exp002 = 0.8342
+	General_Hamming_Exp/eval_phase/test_stream/Task003/Exp002 = 0.2385
+	General_Jaccard_Exp/eval_phase/test_stream/Task003/Exp002 = 0.7156
+	Loss_Exp/eval_phase/test_stream/Task003/Exp002 = 1.0744
+	Top1_Acc_Exp/eval_phase/test_stream/Task003/Exp002 = 0.7615
+-- Starting eval on experience 3 (Task 4) from test stream --
+> Eval on experience 3 (Task 4) from test stream ended.
+	General_Acc_Exp/eval_phase/test_stream/Task004/Exp003 = 0.6537
+	General_ECE_Exp/eval_phase/test_stream/Task004/Exp003 = 0.3533
+	General_F1_Exp/eval_phase/test_stream/Task004/Exp003 = 0.7452
+	General_Hamming_Exp/eval_phase/test_stream/Task004/Exp003 = 0.3463
+	General_Jaccard_Exp/eval_phase/test_stream/Task004/Exp003 = 0.5939
+	Loss_Exp/eval_phase/test_stream/Task004/Exp003 = 2.0308
+	Top1_Acc_Exp/eval_phase/test_stream/Task004/Exp003 = 0.6537
+-- Starting eval on experience 4 (Task 5) from test stream --
+> Eval on experience 4 (Task 5) from test stream ended.
+	General_Acc_Exp/eval_phase/test_stream/Task005/Exp004 = 0.8137
+	General_ECE_Exp/eval_phase/test_stream/Task005/Exp004 = 0.1280
+	General_F1_Exp/eval_phase/test_stream/Task005/Exp004 = 0.8750
+	General_Hamming_Exp/eval_phase/test_stream/Task005/Exp004 = 0.1863
+	General_Jaccard_Exp/eval_phase/test_stream/Task005/Exp004 = 0.7778
+	Loss_Exp/eval_phase/test_stream/Task005/Exp004 = 0.4839
+	Top1_Acc_Exp/eval_phase/test_stream/Task005/Exp004 = 0.8137
+-- Starting eval on experience 5 (Task 6) from test stream --
+> Eval on experience 5 (Task 6) from test stream ended.
+	General_Acc_Exp/eval_phase/test_stream/Task006/Exp005 = 0.9039
+	General_ECE_Exp/eval_phase/test_stream/Task006/Exp005 = 0.0784
+	General_F1_Exp/eval_phase/test_stream/Task006/Exp005 = 0.9191
+	General_Hamming_Exp/eval_phase/test_stream/Task006/Exp005 = 0.0961
+	General_Jaccard_Exp/eval_phase/test_stream/Task006/Exp005 = 0.8503
+	Loss_Exp/eval_phase/test_stream/Task006/Exp005 = 0.3119
+	Top1_Acc_Exp/eval_phase/test_stream/Task006/Exp005 = 0.9039
+-- Starting eval on experience 6 (Task 7) from test stream --
+> Eval on experience 6 (Task 7) from test stream ended.
+	General_Acc_Exp/eval_phase/test_stream/Task007/Exp006 = 0.9398
+	General_ECE_Exp/eval_phase/test_stream/Task007/Exp006 = 0.0535
+	General_F1_Exp/eval_phase/test_stream/Task007/Exp006 = 0.9456
+	General_Hamming_Exp/eval_phase/test_stream/Task007/Exp006 = 0.0602
+	General_Jaccard_Exp/eval_phase/test_stream/Task007/Exp006 = 0.8968
+	Loss_Exp/eval_phase/test_stream/Task007/Exp006 = 0.2403
+	Top1_Acc_Exp/eval_phase/test_stream/Task007/Exp006 = 0.9398
+-- >> End of eval phase << --
+	ConfusionMatrix_Stream/eval_phase/test_stream = 
+tensor([[427, 152],
+        [ 40, 637]])
+	Loss_Stream/eval_phase/test_stream/Task007 = 0.6852
+	StreamForgetting/eval_phase/test_stream = 0.0769
+-- >> Start of training phase << --
+-- Starting training on experience 2 (Task 3) from train stream --
+Epoch 0 ended.
+	Loss_Epoch/train_phase/train_stream/Task003 = 0.5645
+Epoch 1 ended.
+	Loss_Epoch/train_phase/train_stream/Task003 = 0.0678
+-- >> End of training phase << --
+-- >> Start of eval phase << --
+-- Starting eval on experience 0 (Task 1) from test stream --
+> Eval on experience 0 (Task 1) from test stream ended.
+	ExperienceForgetting/eval_phase/test_stream/Task001/Exp000 = 0.0839
+	General_Acc_Exp/eval_phase/test_stream/Task001/Exp000 = 0.9021
+	General_ECE_Exp/eval_phase/test_stream/Task001/Exp000 = 0.0915
+	General_F1_Exp/eval_phase/test_stream/Task001/Exp000 = 0.8108
+	General_Hamming_Exp/eval_phase/test_stream/Task001/Exp000 = 0.0979
+	General_Jaccard_Exp/eval_phase/test_stream/Task001/Exp000 = 0.6818
+	Loss_Exp/eval_phase/test_stream/Task001/Exp000 = 0.3249
+	Top1_Acc_Exp/eval_phase/test_stream/Task001/Exp000 = 0.9021
+-- Starting eval on experience 1 (Task 2) from test stream --
+> Eval on experience 1 (Task 2) from test stream ended.
+	ExperienceForgetting/eval_phase/test_stream/Task002/Exp001 = 0.1164
+	General_Acc_Exp/eval_phase/test_stream/Task002/Exp001 = 0.8630
+	General_ECE_Exp/eval_phase/test_stream/Task002/Exp001 = 0.1763
+	General_F1_Exp/eval_phase/test_stream/Task002/Exp001 = 0.8000
+	General_Hamming_Exp/eval_phase/test_stream/Task002/Exp001 = 0.1370
+	General_Jaccard_Exp/eval_phase/test_stream/Task002/Exp001 = 0.6667
+	Loss_Exp/eval_phase/test_stream/Task002/Exp001 = 0.2999
+	Top1_Acc_Exp/eval_phase/test_stream/Task002/Exp001 = 0.8630
+-- Starting eval on experience 2 (Task 3) from test stream --
+> Eval on experience 2 (Task 3) from test stream ended.
+	General_Acc_Exp/eval_phase/test_stream/Task003/Exp002 = 0.9538
+	General_ECE_Exp/eval_phase/test_stream/Task003/Exp002 = 0.1285
+	General_F1_Exp/eval_phase/test_stream/Task003/Exp002 = 0.9677
+	General_Hamming_Exp/eval_phase/test_stream/Task003/Exp002 = 0.0462
+	General_Jaccard_Exp/eval_phase/test_stream/Task003/Exp002 = 0.9375
+	Loss_Exp/eval_phase/test_stream/Task003/Exp002 = 0.1996
+	Top1_Acc_Exp/eval_phase/test_stream/Task003/Exp002 = 0.9538
+-- Starting eval on experience 3 (Task 4) from test stream --
+> Eval on experience 3 (Task 4) from test stream ended.
+	General_Acc_Exp/eval_phase/test_stream/Task004/Exp003 = 0.6450
+	General_ECE_Exp/eval_phase/test_stream/Task004/Exp003 = 0.1877
+	General_F1_Exp/eval_phase/test_stream/Task004/Exp003 = 0.7172
+	General_Hamming_Exp/eval_phase/test_stream/Task004/Exp003 = 0.3550
+	General_Jaccard_Exp/eval_phase/test_stream/Task004/Exp003 = 0.5591
+	Loss_Exp/eval_phase/test_stream/Task004/Exp003 = 0.7308
+	Top1_Acc_Exp/eval_phase/test_stream/Task004/Exp003 = 0.6450
+-- Starting eval on experience 4 (Task 5) from test stream --
+> Eval on experience 4 (Task 5) from test stream ended.
+	General_Acc_Exp/eval_phase/test_stream/Task005/Exp004 = 0.7888
+	General_ECE_Exp/eval_phase/test_stream/Task005/Exp004 = 0.2721
+	General_F1_Exp/eval_phase/test_stream/Task005/Exp004 = 0.8300
+	General_Hamming_Exp/eval_phase/test_stream/Task005/Exp004 = 0.2112
+	General_Jaccard_Exp/eval_phase/test_stream/Task005/Exp004 = 0.7094
+	Loss_Exp/eval_phase/test_stream/Task005/Exp004 = 0.9766
+	Top1_Acc_Exp/eval_phase/test_stream/Task005/Exp004 = 0.7888
+-- Starting eval on experience 5 (Task 6) from test stream --
+> Eval on experience 5 (Task 6) from test stream ended.
+	General_Acc_Exp/eval_phase/test_stream/Task006/Exp005 = 0.6987
+	General_ECE_Exp/eval_phase/test_stream/Task006/Exp005 = 0.3106
+	General_F1_Exp/eval_phase/test_stream/Task006/Exp005 = 0.6387
+	General_Hamming_Exp/eval_phase/test_stream/Task006/Exp005 = 0.3013
+	General_Jaccard_Exp/eval_phase/test_stream/Task006/Exp005 = 0.4692
+	Loss_Exp/eval_phase/test_stream/Task006/Exp005 = 0.8931
+	Top1_Acc_Exp/eval_phase/test_stream/Task006/Exp005 = 0.6987
+-- Starting eval on experience 6 (Task 7) from test stream --
+> Eval on experience 6 (Task 7) from test stream ended.
+	General_Acc_Exp/eval_phase/test_stream/Task007/Exp006 = 0.6019
+	General_ECE_Exp/eval_phase/test_stream/Task007/Exp006 = 0.3628
+	General_F1_Exp/eval_phase/test_stream/Task007/Exp006 = 0.4189
+	General_Hamming_Exp/eval_phase/test_stream/Task007/Exp006 = 0.3981
+	General_Jaccard_Exp/eval_phase/test_stream/Task007/Exp006 = 0.2650
+	Loss_Exp/eval_phase/test_stream/Task007/Exp006 = 1.0557
+	Top1_Acc_Exp/eval_phase/test_stream/Task007/Exp006 = 0.6019
+-- >> End of eval phase << --
+	ConfusionMatrix_Stream/eval_phase/test_stream = 
+tensor([[506,  73],
+        [238, 439]])
+	Loss_Stream/eval_phase/test_stream/Task007 = 0.6965
+	StreamForgetting/eval_phase/test_stream = 0.1002
+-- >> Start of training phase << --
+-- Starting training on experience 3 (Task 4) from train stream --
+Epoch 0 ended.
+	Loss_Epoch/train_phase/train_stream/Task004 = 0.2763
+Epoch 1 ended.
+	Loss_Epoch/train_phase/train_stream/Task004 = 0.0243
+-- >> End of training phase << --
+-- >> Start of eval phase << --
+-- Starting eval on experience 0 (Task 1) from test stream --
+> Eval on experience 0 (Task 1) from test stream ended.
+	ExperienceForgetting/eval_phase/test_stream/Task001/Exp000 = 0.1608
+	General_Acc_Exp/eval_phase/test_stream/Task001/Exp000 = 0.8252
+	General_ECE_Exp/eval_phase/test_stream/Task001/Exp000 = 0.1272
+	General_F1_Exp/eval_phase/test_stream/Task001/Exp000 = 0.6835
+	General_Hamming_Exp/eval_phase/test_stream/Task001/Exp000 = 0.1748
+	General_Jaccard_Exp/eval_phase/test_stream/Task001/Exp000 = 0.5192
+	Loss_Exp/eval_phase/test_stream/Task001/Exp000 = 0.4504
+	Top1_Acc_Exp/eval_phase/test_stream/Task001/Exp000 = 0.8252
+-- Starting eval on experience 1 (Task 2) from test stream --
+> Eval on experience 1 (Task 2) from test stream ended.
+	ExperienceForgetting/eval_phase/test_stream/Task002/Exp001 = 0.2055
+	General_Acc_Exp/eval_phase/test_stream/Task002/Exp001 = 0.7740
+	General_ECE_Exp/eval_phase/test_stream/Task002/Exp001 = 0.2044
+	General_F1_Exp/eval_phase/test_stream/Task002/Exp001 = 0.6207
+	General_Hamming_Exp/eval_phase/test_stream/Task002/Exp001 = 0.2260
+	General_Jaccard_Exp/eval_phase/test_stream/Task002/Exp001 = 0.4500
+	Loss_Exp/eval_phase/test_stream/Task002/Exp001 = 0.4577
+	Top1_Acc_Exp/eval_phase/test_stream/Task002/Exp001 = 0.7740
+-- Starting eval on experience 2 (Task 3) from test stream --
+> Eval on experience 2 (Task 3) from test stream ended.
+	ExperienceForgetting/eval_phase/test_stream/Task003/Exp002 = 0.0154
+	General_Acc_Exp/eval_phase/test_stream/Task003/Exp002 = 0.9385
+	General_ECE_Exp/eval_phase/test_stream/Task003/Exp002 = 0.0727
+	General_F1_Exp/eval_phase/test_stream/Task003/Exp002 = 0.9570
+	General_Hamming_Exp/eval_phase/test_stream/Task003/Exp002 = 0.0615
+	General_Jaccard_Exp/eval_phase/test_stream/Task003/Exp002 = 0.9175
+	Loss_Exp/eval_phase/test_stream/Task003/Exp002 = 0.1643
+	Top1_Acc_Exp/eval_phase/test_stream/Task003/Exp002 = 0.9385
+-- Starting eval on experience 3 (Task 4) from test stream --
+> Eval on experience 3 (Task 4) from test stream ended.
+	General_Acc_Exp/eval_phase/test_stream/Task004/Exp003 = 1.0000
+	General_ECE_Exp/eval_phase/test_stream/Task004/Exp003 = 0.0053
+	General_F1_Exp/eval_phase/test_stream/Task004/Exp003 = 1.0000
+	General_Hamming_Exp/eval_phase/test_stream/Task004/Exp003 = 0.0000
+	General_Jaccard_Exp/eval_phase/test_stream/Task004/Exp003 = 1.0000
+	Loss_Exp/eval_phase/test_stream/Task004/Exp003 = 0.0060
+	Top1_Acc_Exp/eval_phase/test_stream/Task004/Exp003 = 1.0000
+-- Starting eval on experience 4 (Task 5) from test stream --
+> Eval on experience 4 (Task 5) from test stream ended.
+	General_Acc_Exp/eval_phase/test_stream/Task005/Exp004 = 0.7453
+	General_ECE_Exp/eval_phase/test_stream/Task005/Exp004 = 0.2259
+	General_F1_Exp/eval_phase/test_stream/Task005/Exp004 = 0.7960
+	General_Hamming_Exp/eval_phase/test_stream/Task005/Exp004 = 0.2547
+	General_Jaccard_Exp/eval_phase/test_stream/Task005/Exp004 = 0.6612
+	Loss_Exp/eval_phase/test_stream/Task005/Exp004 = 0.7578
+	Top1_Acc_Exp/eval_phase/test_stream/Task005/Exp004 = 0.7453
+-- Starting eval on experience 5 (Task 6) from test stream --
+> Eval on experience 5 (Task 6) from test stream ended.
+	General_Acc_Exp/eval_phase/test_stream/Task006/Exp005 = 0.7948
+	General_ECE_Exp/eval_phase/test_stream/Task006/Exp005 = 0.2400
+	General_F1_Exp/eval_phase/test_stream/Task006/Exp005 = 0.7793
+	General_Hamming_Exp/eval_phase/test_stream/Task006/Exp005 = 0.2052
+	General_Jaccard_Exp/eval_phase/test_stream/Task006/Exp005 = 0.6385
+	Loss_Exp/eval_phase/test_stream/Task006/Exp005 = 0.6905
+	Top1_Acc_Exp/eval_phase/test_stream/Task006/Exp005 = 0.7948
+-- Starting eval on experience 6 (Task 7) from test stream --
+> Eval on experience 6 (Task 7) from test stream ended.
+	General_Acc_Exp/eval_phase/test_stream/Task007/Exp006 = 0.7037
+	General_ECE_Exp/eval_phase/test_stream/Task007/Exp006 = 0.2994
+	General_F1_Exp/eval_phase/test_stream/Task007/Exp006 = 0.6190
+	General_Hamming_Exp/eval_phase/test_stream/Task007/Exp006 = 0.2963
+	General_Jaccard_Exp/eval_phase/test_stream/Task007/Exp006 = 0.4483
+	Loss_Exp/eval_phase/test_stream/Task007/Exp006 = 0.9961
+	Top1_Acc_Exp/eval_phase/test_stream/Task007/Exp006 = 0.7037
+-- >> End of eval phase << --
+	ConfusionMatrix_Stream/eval_phase/test_stream = 
+tensor([[563,  16],
+        [202, 475]])
+	Loss_Stream/eval_phase/test_stream/Task007 = 0.5169
+	StreamForgetting/eval_phase/test_stream = 0.1272
+-- >> Start of training phase << --
+-- Starting training on experience 4 (Task 5) from train stream --
+Epoch 0 ended.
+	Loss_Epoch/train_phase/train_stream/Task005 = 0.3670
+Epoch 1 ended.
+	Loss_Epoch/train_phase/train_stream/Task005 = 0.0733
+-- >> End of training phase << --
+-- >> Start of eval phase << --
+-- Starting eval on experience 0 (Task 1) from test stream --
+> Eval on experience 0 (Task 1) from test stream ended.
+	ExperienceForgetting/eval_phase/test_stream/Task001/Exp000 = 0.2098
+	General_Acc_Exp/eval_phase/test_stream/Task001/Exp000 = 0.7762
+	General_ECE_Exp/eval_phase/test_stream/Task001/Exp000 = 0.1906
+	General_F1_Exp/eval_phase/test_stream/Task001/Exp000 = 0.6981
+	General_Hamming_Exp/eval_phase/test_stream/Task001/Exp000 = 0.2238
+	General_Jaccard_Exp/eval_phase/test_stream/Task001/Exp000 = 0.5362
+	Loss_Exp/eval_phase/test_stream/Task001/Exp000 = 0.4886
+	Top1_Acc_Exp/eval_phase/test_stream/Task001/Exp000 = 0.7762
+-- Starting eval on experience 1 (Task 2) from test stream --
+> Eval on experience 1 (Task 2) from test stream ended.
+	ExperienceForgetting/eval_phase/test_stream/Task002/Exp001 = 0.0342
+	General_Acc_Exp/eval_phase/test_stream/Task002/Exp001 = 0.9452
+	General_ECE_Exp/eval_phase/test_stream/Task002/Exp001 = 0.0649
+	General_F1_Exp/eval_phase/test_stream/Task002/Exp001 = 0.9286
+	General_Hamming_Exp/eval_phase/test_stream/Task002/Exp001 = 0.0548
+	General_Jaccard_Exp/eval_phase/test_stream/Task002/Exp001 = 0.8667
+	Loss_Exp/eval_phase/test_stream/Task002/Exp001 = 0.1501
+	Top1_Acc_Exp/eval_phase/test_stream/Task002/Exp001 = 0.9452
+-- Starting eval on experience 2 (Task 3) from test stream --
+> Eval on experience 2 (Task 3) from test stream ended.
+	ExperienceForgetting/eval_phase/test_stream/Task003/Exp002 = 0.1000
+	General_Acc_Exp/eval_phase/test_stream/Task003/Exp002 = 0.8538
+	General_ECE_Exp/eval_phase/test_stream/Task003/Exp002 = 0.1203
+	General_F1_Exp/eval_phase/test_stream/Task003/Exp002 = 0.9100
+	General_Hamming_Exp/eval_phase/test_stream/Task003/Exp002 = 0.1462
+	General_Jaccard_Exp/eval_phase/test_stream/Task003/Exp002 = 0.8348
+	Loss_Exp/eval_phase/test_stream/Task003/Exp002 = 0.4117
+	Top1_Acc_Exp/eval_phase/test_stream/Task003/Exp002 = 0.8538
+-- Starting eval on experience 3 (Task 4) from test stream --
+> Eval on experience 3 (Task 4) from test stream ended.
+	ExperienceForgetting/eval_phase/test_stream/Task004/Exp003 = 0.2771
+	General_Acc_Exp/eval_phase/test_stream/Task004/Exp003 = 0.7229
+	General_ECE_Exp/eval_phase/test_stream/Task004/Exp003 = 0.2473
+	General_F1_Exp/eval_phase/test_stream/Task004/Exp003 = 0.7852
+	General_Hamming_Exp/eval_phase/test_stream/Task004/Exp003 = 0.2771
+	General_Jaccard_Exp/eval_phase/test_stream/Task004/Exp003 = 0.6464
+	Loss_Exp/eval_phase/test_stream/Task004/Exp003 = 0.5263
+	Top1_Acc_Exp/eval_phase/test_stream/Task004/Exp003 = 0.7229
+-- Starting eval on experience 4 (Task 5) from test stream --
+> Eval on experience 4 (Task 5) from test stream ended.
+	General_Acc_Exp/eval_phase/test_stream/Task005/Exp004 = 0.9689
+	General_ECE_Exp/eval_phase/test_stream/Task005/Exp004 = 0.0418
+	General_F1_Exp/eval_phase/test_stream/Task005/Exp004 = 0.9782
+	General_Hamming_Exp/eval_phase/test_stream/Task005/Exp004 = 0.0311
+	General_Jaccard_Exp/eval_phase/test_stream/Task005/Exp004 = 0.9573
+	Loss_Exp/eval_phase/test_stream/Task005/Exp004 = 0.0666
+	Top1_Acc_Exp/eval_phase/test_stream/Task005/Exp004 = 0.9689
+-- Starting eval on experience 5 (Task 6) from test stream --
+> Eval on experience 5 (Task 6) from test stream ended.
+	General_Acc_Exp/eval_phase/test_stream/Task006/Exp005 = 0.8734
+	General_ECE_Exp/eval_phase/test_stream/Task006/Exp005 = 0.0839
+	General_F1_Exp/eval_phase/test_stream/Task006/Exp005 = 0.8845
+	General_Hamming_Exp/eval_phase/test_stream/Task006/Exp005 = 0.1266
+	General_Jaccard_Exp/eval_phase/test_stream/Task006/Exp005 = 0.7929
+	Loss_Exp/eval_phase/test_stream/Task006/Exp005 = 0.3533
+	Top1_Acc_Exp/eval_phase/test_stream/Task006/Exp005 = 0.8734
+-- Starting eval on experience 6 (Task 7) from test stream --
+> Eval on experience 6 (Task 7) from test stream ended.
+	General_Acc_Exp/eval_phase/test_stream/Task007/Exp006 = 0.8426
+	General_ECE_Exp/eval_phase/test_stream/Task007/Exp006 = 0.0957
+	General_F1_Exp/eval_phase/test_stream/Task007/Exp006 = 0.8365
+	General_Hamming_Exp/eval_phase/test_stream/Task007/Exp006 = 0.1574
+	General_Jaccard_Exp/eval_phase/test_stream/Task007/Exp006 = 0.7190
+	Loss_Exp/eval_phase/test_stream/Task007/Exp006 = 0.4088
+	Top1_Acc_Exp/eval_phase/test_stream/Task007/Exp006 = 0.8426
+-- >> End of eval phase << --
+	ConfusionMatrix_Stream/eval_phase/test_stream = 
+tensor([[453, 126],
+        [ 65, 612]])
+	Loss_Stream/eval_phase/test_stream/Task007 = 0.3557
+	StreamForgetting/eval_phase/test_stream = 0.1553
+-- >> Start of training phase << --
+-- Starting training on experience 5 (Task 6) from train stream --
+Epoch 0 ended.
+	Loss_Epoch/train_phase/train_stream/Task006 = 0.1700
+Epoch 1 ended.
+	Loss_Epoch/train_phase/train_stream/Task006 = 0.0184
+-- >> End of training phase << --
+-- >> Start of eval phase << --
+-- Starting eval on experience 0 (Task 1) from test stream --
+> Eval on experience 0 (Task 1) from test stream ended.
+	ExperienceForgetting/eval_phase/test_stream/Task001/Exp000 = 0.1958
+-- >> Start of training phase << --
+-- Starting training on experience 0 (Task 1) from train stream --
+Epoch 0 ended.
+	Loss_Epoch/train_phase/train_stream/Task001 = 0.5649
+Epoch 1 ended.
+	Loss_Epoch/train_phase/train_stream/Task001 = 0.0743
+Epoch 2 ended.
+	Loss_Epoch/train_phase/train_stream/Task001 = 0.0174
+Epoch 3 ended.
+	Loss_Epoch/train_phase/train_stream/Task001 = 0.0074
+Epoch 4 ended.
+	Loss_Epoch/train_phase/train_stream/Task001 = 0.0048
+Epoch 5 ended.
+	Loss_Epoch/train_phase/train_stream/Task001 = 0.0024
+Epoch 6 ended.
+	Loss_Epoch/train_phase/train_stream/Task001 = 0.0025
+Epoch 7 ended.
+	Loss_Epoch/train_phase/train_stream/Task001 = 0.0014
+Epoch 8 ended.
+	Loss_Epoch/train_phase/train_stream/Task001 = 0.0012
+Epoch 9 ended.
+	Loss_Epoch/train_phase/train_stream/Task001 = 0.0010
+-- >> End of training phase << --
+-- >> Start of eval phase << --
+-- Starting eval on experience 0 (Task 1) from test stream --
+> Eval on experience 0 (Task 1) from test stream ended.
+	General_Acc_Exp/eval_phase/test_stream/Task001/Exp000 = 0.9930
+	General_ECE_Exp/eval_phase/test_stream/Task001/Exp000 = 0.0142
+	General_F1_Exp/eval_phase/test_stream/Task001/Exp000 = 0.9880
+	General_Hamming_Exp/eval_phase/test_stream/Task001/Exp000 = 0.0070
+	General_Jaccard_Exp/eval_phase/test_stream/Task001/Exp000 = 0.9762
+	Loss_Exp/eval_phase/test_stream/Task001/Exp000 = 0.0574
+	Top1_Acc_Exp/eval_phase/test_stream/Task001/Exp000 = 0.9930
+-- Starting eval on experience 1 (Task 2) from test stream --
+> Eval on experience 1 (Task 2) from test stream ended.
+	General_Acc_Exp/eval_phase/test_stream/Task002/Exp001 = 0.7945
+	General_ECE_Exp/eval_phase/test_stream/Task002/Exp001 = 0.1734
+	General_F1_Exp/eval_phase/test_stream/Task002/Exp001 = 0.6809
+	General_Hamming_Exp/eval_phase/test_stream/Task002/Exp001 = 0.2055
+	General_Jaccard_Exp/eval_phase/test_stream/Task002/Exp001 = 0.5161
+	Loss_Exp/eval_phase/test_stream/Task002/Exp001 = 0.6419
+	Top1_Acc_Exp/eval_phase/test_stream/Task002/Exp001 = 0.7945
+-- Starting eval on experience 2 (Task 3) from test stream --
+> Eval on experience 2 (Task 3) from test stream ended.
+	General_Acc_Exp/eval_phase/test_stream/Task003/Exp002 = 0.3769
+	General_ECE_Exp/eval_phase/test_stream/Task003/Exp002 = 0.5974
+	General_F1_Exp/eval_phase/test_stream/Task003/Exp002 = 0.2703
+	General_Hamming_Exp/eval_phase/test_stream/Task003/Exp002 = 0.6231
+	General_Jaccard_Exp/eval_phase/test_stream/Task003/Exp002 = 0.1562
+	Loss_Exp/eval_phase/test_stream/Task003/Exp002 = 2.8206
+	Top1_Acc_Exp/eval_phase/test_stream/Task003/Exp002 = 0.3769
+-- Starting eval on experience 3 (Task 4) from test stream --
+> Eval on experience 3 (Task 4) from test stream ended.
+	General_Acc_Exp/eval_phase/test_stream/Task004/Exp003 = 0.5541
+	General_ECE_Exp/eval_phase/test_stream/Task004/Exp003 = 0.3917
+	General_F1_Exp/eval_phase/test_stream/Task004/Exp003 = 0.2137
+	General_Hamming_Exp/eval_phase/test_stream/Task004/Exp003 = 0.4459
+	General_Jaccard_Exp/eval_phase/test_stream/Task004/Exp003 = 0.1197
+	Loss_Exp/eval_phase/test_stream/Task004/Exp003 = 1.4214
+	Top1_Acc_Exp/eval_phase/test_stream/Task004/Exp003 = 0.5541
+-- Starting eval on experience 4 (Task 5) from test stream --
+> Eval on experience 4 (Task 5) from test stream ended.
+	General_Acc_Exp/eval_phase/test_stream/Task005/Exp004 = 0.6460
+	General_ECE_Exp/eval_phase/test_stream/Task005/Exp004 = 0.3122
+	General_F1_Exp/eval_phase/test_stream/Task005/Exp004 = 0.6851
+	General_Hamming_Exp/eval_phase/test_stream/Task005/Exp004 = 0.3540
+	General_Jaccard_Exp/eval_phase/test_stream/Task005/Exp004 = 0.5210
+	Loss_Exp/eval_phase/test_stream/Task005/Exp004 = 1.0886
+	Top1_Acc_Exp/eval_phase/test_stream/Task005/Exp004 = 0.6460
+-- Starting eval on experience 5 (Task 6) from test stream --
+> Eval on experience 5 (Task 6) from test stream ended.
+	General_Acc_Exp/eval_phase/test_stream/Task006/Exp005 = 0.8079
+	General_ECE_Exp/eval_phase/test_stream/Task006/Exp005 = 0.1719
+	General_F1_Exp/eval_phase/test_stream/Task006/Exp005 = 0.8000
+	General_Hamming_Exp/eval_phase/test_stream/Task006/Exp005 = 0.1921
+	General_Jaccard_Exp/eval_phase/test_stream/Task006/Exp005 = 0.6667
+	Loss_Exp/eval_phase/test_stream/Task006/Exp005 = 0.6132
+	Top1_Acc_Exp/eval_phase/test_stream/Task006/Exp005 = 0.8079
+-- Starting eval on experience 6 (Task 7) from test stream --
+> Eval on experience 6 (Task 7) from test stream ended.
+	General_Acc_Exp/eval_phase/test_stream/Task007/Exp006 = 0.7824
+	General_ECE_Exp/eval_phase/test_stream/Task007/Exp006 = 0.2003
+	General_F1_Exp/eval_phase/test_stream/Task007/Exp006 = 0.7539
+	General_Hamming_Exp/eval_phase/test_stream/Task007/Exp006 = 0.2176
+	General_Jaccard_Exp/eval_phase/test_stream/Task007/Exp006 = 0.6050
+	Loss_Exp/eval_phase/test_stream/Task007/Exp006 = 0.5838
+	Top1_Acc_Exp/eval_phase/test_stream/Task007/Exp006 = 0.7824
+-- >> End of eval phase << --
+	ConfusionMatrix_Stream/eval_phase/test_stream = 
+tensor([[569,  10],
+        [353, 324]])
+	Loss_Stream/eval_phase/test_stream/Task007 = 0.9863
+	StreamForgetting/eval_phase/test_stream = 0.0000
+-- >> Start of training phase << --
+-- Starting training on experience 1 (Task 2) from train stream --
+Epoch 0 ended.
+	Loss_Epoch/train_phase/train_stream/Task002 = 0.1625
+-- >> End of training phase << --
+-- >> Start of eval phase << --
+-- Starting eval on experience 0 (Task 1) from test stream --
+> Eval on experience 0 (Task 1) from test stream ended.
+	ExperienceForgetting/eval_phase/test_stream/Task001/Exp000 = 0.0420
+	General_Acc_Exp/eval_phase/test_stream/Task001/Exp000 = 0.9510
+	General_ECE_Exp/eval_phase/test_stream/Task001/Exp000 = 0.0450
+	General_F1_Exp/eval_phase/test_stream/Task001/Exp000 = 0.9195
+	General_Hamming_Exp/eval_phase/test_stream/Task001/Exp000 = 0.0490
+	General_Jaccard_Exp/eval_phase/test_stream/Task001/Exp000 = 0.8511
+	Loss_Exp/eval_phase/test_stream/Task001/Exp000 = 0.1573
+	Top1_Acc_Exp/eval_phase/test_stream/Task001/Exp000 = 0.9510
+-- Starting eval on experience 1 (Task 2) from test stream --
+> Eval on experience 1 (Task 2) from test stream ended.
+	General_Acc_Exp/eval_phase/test_stream/Task002/Exp001 = 0.9863
+	General_ECE_Exp/eval_phase/test_stream/Task002/Exp001 = 0.0213
+	General_F1_Exp/eval_phase/test_stream/Task002/Exp001 = 0.9836
+	General_Hamming_Exp/eval_phase/test_stream/Task002/Exp001 = 0.0137
+	General_Jaccard_Exp/eval_phase/test_stream/Task002/Exp001 = 0.9677
+	Loss_Exp/eval_phase/test_stream/Task002/Exp001 = 0.0264
+	Top1_Acc_Exp/eval_phase/test_stream/Task002/Exp001 = 0.9863
+-- Starting eval on experience 2 (Task 3) from test stream --
+> Eval on experience 2 (Task 3) from test stream ended.
+	General_Acc_Exp/eval_phase/test_stream/Task003/Exp002 = 0.7231
+	General_ECE_Exp/eval_phase/test_stream/Task003/Exp002 = 0.2365
+	General_F1_Exp/eval_phase/test_stream/Task003/Exp002 = 0.8022
+	General_Hamming_Exp/eval_phase/test_stream/Task003/Exp002 = 0.2769
+	General_Jaccard_Exp/eval_phase/test_stream/Task003/Exp002 = 0.6697
+	Loss_Exp/eval_phase/test_stream/Task003/Exp002 = 1.0911
+	Top1_Acc_Exp/eval_phase/test_stream/Task003/Exp002 = 0.7231
+-- Starting eval on experience 3 (Task 4) from test stream --
+> Eval on experience 3 (Task 4) from test stream ended.
+	General_Acc_Exp/eval_phase/test_stream/Task004/Exp003 = 0.6926
+	General_ECE_Exp/eval_phase/test_stream/Task004/Exp003 = 0.2298
+	General_F1_Exp/eval_phase/test_stream/Task004/Exp003 = 0.7577
+	General_Hamming_Exp/eval_phase/test_stream/Task004/Exp003 = 0.3074
+	General_Jaccard_Exp/eval_phase/test_stream/Task004/Exp003 = 0.6099
+	Loss_Exp/eval_phase/test_stream/Task004/Exp003 = 0.8997
+	Top1_Acc_Exp/eval_phase/test_stream/Task004/Exp003 = 0.6926
+-- Starting eval on experience 4 (Task 5) from test stream --
+> Eval on experience 4 (Task 5) from test stream ended.
+	General_Acc_Exp/eval_phase/test_stream/Task005/Exp004 = 0.8137
+	General_ECE_Exp/eval_phase/test_stream/Task005/Exp004 = 0.1286
+	General_F1_Exp/eval_phase/test_stream/Task005/Exp004 = 0.8684
+	General_Hamming_Exp/eval_phase/test_stream/Task005/Exp004 = 0.1863
+	General_Jaccard_Exp/eval_phase/test_stream/Task005/Exp004 = 0.7674
+	Loss_Exp/eval_phase/test_stream/Task005/Exp004 = 0.4037
+	Top1_Acc_Exp/eval_phase/test_stream/Task005/Exp004 = 0.8137
+-- Starting eval on experience 5 (Task 6) from test stream --
+> Eval on experience 5 (Task 6) from test stream ended.
+	General_Acc_Exp/eval_phase/test_stream/Task006/Exp005 = 0.8865
+	General_ECE_Exp/eval_phase/test_stream/Task006/Exp005 = 0.0761
+	General_F1_Exp/eval_phase/test_stream/Task006/Exp005 = 0.9037
+	General_Hamming_Exp/eval_phase/test_stream/Task006/Exp005 = 0.1135
+	General_Jaccard_Exp/eval_phase/test_stream/Task006/Exp005 = 0.8243
+	Loss_Exp/eval_phase/test_stream/Task006/Exp005 = 0.3183
+	Top1_Acc_Exp/eval_phase/test_stream/Task006/Exp005 = 0.8865
+-- Starting eval on experience 6 (Task 7) from test stream --
+> Eval on experience 6 (Task 7) from test stream ended.
+	General_Acc_Exp/eval_phase/test_stream/Task007/Exp006 = 0.9074
+	General_ECE_Exp/eval_phase/test_stream/Task007/Exp006 = 0.0603
+	General_F1_Exp/eval_phase/test_stream/Task007/Exp006 = 0.9167
+	General_Hamming_Exp/eval_phase/test_stream/Task007/Exp006 = 0.0926
+	General_Jaccard_Exp/eval_phase/test_stream/Task007/Exp006 = 0.8462
+	Loss_Exp/eval_phase/test_stream/Task007/Exp006 = 0.2754
+	Top1_Acc_Exp/eval_phase/test_stream/Task007/Exp006 = 0.9074
+-- >> End of eval phase << --
+	ConfusionMatrix_Stream/eval_phase/test_stream = 
+tensor([[449, 130],
+        [ 62, 615]])
+	Loss_Stream/eval_phase/test_stream/Task007 = 0.4565
+	StreamForgetting/eval_phase/test_stream = 0.0420
+-- >> Start of training phase << --
+-- Starting training on experience 2 (Task 3) from train stream --
+Epoch 0 ended.
+	Loss_Epoch/train_phase/train_stream/Task003 = 0.6257
+-- >> End of training phase << --
+-- >> Start of eval phase << --
+-- Starting eval on experience 0 (Task 1) from test stream --
+> Eval on experience 0 (Task 1) from test stream ended.
+	ExperienceForgetting/eval_phase/test_stream/Task001/Exp000 = 0.1049
+	General_Acc_Exp/eval_phase/test_stream/Task001/Exp000 = 0.8881
+	General_ECE_Exp/eval_phase/test_stream/Task001/Exp000 = 0.1123
+	General_F1_Exp/eval_phase/test_stream/Task001/Exp000 = 0.7647
+	General_Hamming_Exp/eval_phase/test_stream/Task001/Exp000 = 0.1119
+	General_Jaccard_Exp/eval_phase/test_stream/Task001/Exp000 = 0.6190
+	Loss_Exp/eval_phase/test_stream/Task001/Exp000 = 0.3210
+	Top1_Acc_Exp/eval_phase/test_stream/Task001/Exp000 = 0.8881
+-- Starting eval on experience 1 (Task 2) from test stream --
+> Eval on experience 1 (Task 2) from test stream ended.
+	ExperienceForgetting/eval_phase/test_stream/Task002/Exp001 = 0.1233
+	General_Acc_Exp/eval_phase/test_stream/Task002/Exp001 = 0.8630
+	General_ECE_Exp/eval_phase/test_stream/Task002/Exp001 = 0.1476
+	General_F1_Exp/eval_phase/test_stream/Task002/Exp001 = 0.8000
+	General_Hamming_Exp/eval_phase/test_stream/Task002/Exp001 = 0.1370
+	General_Jaccard_Exp/eval_phase/test_stream/Task002/Exp001 = 0.6667
+	Loss_Exp/eval_phase/test_stream/Task002/Exp001 = 0.2621
+	Top1_Acc_Exp/eval_phase/test_stream/Task002/Exp001 = 0.8630
+-- Starting eval on experience 2 (Task 3) from test stream --
+> Eval on experience 2 (Task 3) from test stream ended.
+	General_Acc_Exp/eval_phase/test_stream/Task003/Exp002 = 0.9462
+	General_ECE_Exp/eval_phase/test_stream/Task003/Exp002 = 0.0815
+	General_F1_Exp/eval_phase/test_stream/Task003/Exp002 = 0.9622
+	General_Hamming_Exp/eval_phase/test_stream/Task003/Exp002 = 0.0538
+	General_Jaccard_Exp/eval_phase/test_stream/Task003/Exp002 = 0.9271
+	Loss_Exp/eval_phase/test_stream/Task003/Exp002 = 0.1789
+	Top1_Acc_Exp/eval_phase/test_stream/Task003/Exp002 = 0.9462
+-- Starting eval on experience 3 (Task 4) from test stream --
+> Eval on experience 3 (Task 4) from test stream ended.
+	General_Acc_Exp/eval_phase/test_stream/Task004/Exp003 = 0.7229
+	General_ECE_Exp/eval_phase/test_stream/Task004/Exp003 = 0.1480
+	General_F1_Exp/eval_phase/test_stream/Task004/Exp003 = 0.7288
+	General_Hamming_Exp/eval_phase/test_stream/Task004/Exp003 = 0.2771
+	General_Jaccard_Exp/eval_phase/test_stream/Task004/Exp003 = 0.5733
+	Loss_Exp/eval_phase/test_stream/Task004/Exp003 = 0.6257
+	Top1_Acc_Exp/eval_phase/test_stream/Task004/Exp003 = 0.7229
+-- Starting eval on experience 4 (Task 5) from test stream --
+> Eval on experience 4 (Task 5) from test stream ended.
+	General_Acc_Exp/eval_phase/test_stream/Task005/Exp004 = 0.7764
+	General_ECE_Exp/eval_phase/test_stream/Task005/Exp004 = 0.2558
+	General_F1_Exp/eval_phase/test_stream/Task005/Exp004 = 0.8200
+	General_Hamming_Exp/eval_phase/test_stream/Task005/Exp004 = 0.2236
+	General_Jaccard_Exp/eval_phase/test_stream/Task005/Exp004 = 0.6949
+	Loss_Exp/eval_phase/test_stream/Task005/Exp004 = 0.8744
+	Top1_Acc_Exp/eval_phase/test_stream/Task005/Exp004 = 0.7764
+-- Starting eval on experience 5 (Task 6) from test stream --
+> Eval on experience 5 (Task 6) from test stream ended.
+	General_Acc_Exp/eval_phase/test_stream/Task006/Exp005 = 0.7380
+	General_ECE_Exp/eval_phase/test_stream/Task006/Exp005 = 0.2724
+	General_F1_Exp/eval_phase/test_stream/Task006/Exp005 = 0.7000
+	General_Hamming_Exp/eval_phase/test_stream/Task006/Exp005 = 0.2620
+	General_Jaccard_Exp/eval_phase/test_stream/Task006/Exp005 = 0.5385
+	Loss_Exp/eval_phase/test_stream/Task006/Exp005 = 0.7043
+	Top1_Acc_Exp/eval_phase/test_stream/Task006/Exp005 = 0.7380
+-- Starting eval on experience 6 (Task 7) from test stream --
+> Eval on experience 6 (Task 7) from test stream ended.
+	General_Acc_Exp/eval_phase/test_stream/Task007/Exp006 = 0.6620
+	General_ECE_Exp/eval_phase/test_stream/Task007/Exp006 = 0.3292
+	General_F1_Exp/eval_phase/test_stream/Task007/Exp006 = 0.5409
+	General_Hamming_Exp/eval_phase/test_stream/Task007/Exp006 = 0.3380
+	General_Jaccard_Exp/eval_phase/test_stream/Task007/Exp006 = 0.3707
+	Loss_Exp/eval_phase/test_stream/Task007/Exp006 = 0.8848
+	Top1_Acc_Exp/eval_phase/test_stream/Task007/Exp006 = 0.6620
+-- >> End of eval phase << --
+	ConfusionMatrix_Stream/eval_phase/test_stream = 
+tensor([[544,  35],
+        [241, 436]])
+	Loss_Stream/eval_phase/test_stream/Task007 = 0.5933
+	StreamForgetting/eval_phase/test_stream = 0.1141
+-- >> Start of training phase << --
+-- Starting training on experience 3 (Task 4) from train stream --
+Epoch 0 ended.
+	Loss_Epoch/train_phase/train_stream/Task004 = 0.2635
+-- >> End of training phase << --
+-- >> Start of eval phase << --
+-- Starting eval on experience 0 (Task 1) from test stream --
+> Eval on experience 0 (Task 1) from test stream ended.
+	ExperienceForgetting/eval_phase/test_stream/Task001/Exp000 = 0.1818
+	General_Acc_Exp/eval_phase/test_stream/Task001/Exp000 = 0.8112
+	General_ECE_Exp/eval_phase/test_stream/Task001/Exp000 = 0.1167
+	General_F1_Exp/eval_phase/test_stream/Task001/Exp000 = 0.5714
+	General_Hamming_Exp/eval_phase/test_stream/Task001/Exp000 = 0.1888
+	General_Jaccard_Exp/eval_phase/test_stream/Task001/Exp000 = 0.4000
+	Loss_Exp/eval_phase/test_stream/Task001/Exp000 = 0.3883
+	Top1_Acc_Exp/eval_phase/test_stream/Task001/Exp000 = 0.8112
+-- Starting eval on experience 1 (Task 2) from test stream --
+> Eval on experience 1 (Task 2) from test stream ended.
+	ExperienceForgetting/eval_phase/test_stream/Task002/Exp001 = 0.1438
+	General_Acc_Exp/eval_phase/test_stream/Task002/Exp001 = 0.8425
+	General_ECE_Exp/eval_phase/test_stream/Task002/Exp001 = 0.1720
+	General_F1_Exp/eval_phase/test_stream/Task002/Exp001 = 0.7629
+	General_Hamming_Exp/eval_phase/test_stream/Task002/Exp001 = 0.1575
+	General_Jaccard_Exp/eval_phase/test_stream/Task002/Exp001 = 0.6167
+	Loss_Exp/eval_phase/test_stream/Task002/Exp001 = 0.3164
+	Top1_Acc_Exp/eval_phase/test_stream/Task002/Exp001 = 0.8425
+-- Starting eval on experience 2 (Task 3) from test stream --
+> Eval on experience 2 (Task 3) from test stream ended.
+	ExperienceForgetting/eval_phase/test_stream/Task003/Exp002 = 0.0462
+	General_Acc_Exp/eval_phase/test_stream/Task003/Exp002 = 0.9000
+	General_ECE_Exp/eval_phase/test_stream/Task003/Exp002 = 0.1109
+	General_F1_Exp/eval_phase/test_stream/Task003/Exp002 = 0.9274
+	General_Hamming_Exp/eval_phase/test_stream/Task003/Exp002 = 0.1000
+	General_Jaccard_Exp/eval_phase/test_stream/Task003/Exp002 = 0.8646
+	Loss_Exp/eval_phase/test_stream/Task003/Exp002 = 0.2659
+	Top1_Acc_Exp/eval_phase/test_stream/Task003/Exp002 = 0.9000
+-- Starting eval on experience 3 (Task 4) from test stream --
+> Eval on experience 3 (Task 4) from test stream ended.
+	General_Acc_Exp/eval_phase/test_stream/Task004/Exp003 = 0.9957
+	General_ECE_Exp/eval_phase/test_stream/Task004/Exp003 = 0.0270
+	General_F1_Exp/eval_phase/test_stream/Task004/Exp003 = 0.9957
+	General_Hamming_Exp/eval_phase/test_stream/Task004/Exp003 = 0.0043
+	General_Jaccard_Exp/eval_phase/test_stream/Task004/Exp003 = 0.9915
+	Loss_Exp/eval_phase/test_stream/Task004/Exp003 = 0.0379
+	Top1_Acc_Exp/eval_phase/test_stream/Task004/Exp003 = 0.9957
+-- Starting eval on experience 4 (Task 5) from test stream --
+> Eval on experience 4 (Task 5) from test stream ended.
+	General_Acc_Exp/eval_phase/test_stream/Task005/Exp004 = 0.7578
+	General_ECE_Exp/eval_phase/test_stream/Task005/Exp004 = 0.2289
+	General_F1_Exp/eval_phase/test_stream/Task005/Exp004 = 0.8020
+	General_Hamming_Exp/eval_phase/test_stream/Task005/Exp004 = 0.2422
+	General_Jaccard_Exp/eval_phase/test_stream/Task005/Exp004 = 0.6695
+	Loss_Exp/eval_phase/test_stream/Task005/Exp004 = 0.6778
+	Top1_Acc_Exp/eval_phase/test_stream/Task005/Exp004 = 0.7578
+-- Starting eval on experience 5 (Task 6) from test stream --
+> Eval on experience 5 (Task 6) from test stream ended.
+	General_Acc_Exp/eval_phase/test_stream/Task006/Exp005 = 0.7031
+	General_ECE_Exp/eval_phase/test_stream/Task006/Exp005 = 0.2945
+	General_F1_Exp/eval_phase/test_stream/Task006/Exp005 = 0.6458
+	General_Hamming_Exp/eval_phase/test_stream/Task006/Exp005 = 0.2969
+	General_Jaccard_Exp/eval_phase/test_stream/Task006/Exp005 = 0.4769
+	Loss_Exp/eval_phase/test_stream/Task006/Exp005 = 0.6352
+	Top1_Acc_Exp/eval_phase/test_stream/Task006/Exp005 = 0.7031
+-- Starting eval on experience 6 (Task 7) from test stream --
+> Eval on experience 6 (Task 7) from test stream ended.
+	General_Acc_Exp/eval_phase/test_stream/Task007/Exp006 = 0.7083
+	General_ECE_Exp/eval_phase/test_stream/Task007/Exp006 = 0.2955
+	General_F1_Exp/eval_phase/test_stream/Task007/Exp006 = 0.6272
+	General_Hamming_Exp/eval_phase/test_stream/Task007/Exp006 = 0.2917
+	General_Jaccard_Exp/eval_phase/test_stream/Task007/Exp006 = 0.4569
+	Loss_Exp/eval_phase/test_stream/Task007/Exp006 = 0.7156
+	Top1_Acc_Exp/eval_phase/test_stream/Task007/Exp006 = 0.7083
+-- >> End of eval phase << --
+	ConfusionMatrix_Stream/eval_phase/test_stream = 
+tensor([[573,   6],
+        [228, 449]])
+	Loss_Stream/eval_phase/test_stream/Task007 = 0.4412
+	StreamForgetting/eval_phase/test_stream = 0.1239
+-- >> Start of training phase << --
+-- Starting training on experience 4 (Task 5) from train stream --
+Epoch 0 ended.
+	Loss_Epoch/train_phase/train_stream/Task005 = 0.3771
+-- >> End of training phase << --
+-- >> Start of eval phase << --
+-- Starting eval on experience 0 (Task 1) from test stream --
+> Eval on experience 0 (Task 1) from test stream ended.
+	ExperienceForgetting/eval_phase/test_stream/Task001/Exp000 = 0.0559
+	General_Acc_Exp/eval_phase/test_stream/Task001/Exp000 = 0.9371
+	General_ECE_Exp/eval_phase/test_stream/Task001/Exp000 = 0.0862
+	General_F1_Exp/eval_phase/test_stream/Task001/Exp000 = 0.8916
+	General_Hamming_Exp/eval_phase/test_stream/Task001/Exp000 = 0.0629
+	General_Jaccard_Exp/eval_phase/test_stream/Task001/Exp000 = 0.8043
+	Loss_Exp/eval_phase/test_stream/Task001/Exp000 = 0.2123
+	Top1_Acc_Exp/eval_phase/test_stream/Task001/Exp000 = 0.9371
+-- Starting eval on experience 1 (Task 2) from test stream --
+> Eval on experience 1 (Task 2) from test stream ended.
+	ExperienceForgetting/eval_phase/test_stream/Task002/Exp001 = 0.1233
+	General_Acc_Exp/eval_phase/test_stream/Task002/Exp001 = 0.8630
+	General_ECE_Exp/eval_phase/test_stream/Task002/Exp001 = 0.1860
+	General_F1_Exp/eval_phase/test_stream/Task002/Exp001 = 0.8000
+	General_Hamming_Exp/eval_phase/test_stream/Task002/Exp001 = 0.1370
+	General_Jaccard_Exp/eval_phase/test_stream/Task002/Exp001 = 0.6667
+	Loss_Exp/eval_phase/test_stream/Task002/Exp001 = 0.2641
+	Top1_Acc_Exp/eval_phase/test_stream/Task002/Exp001 = 0.8630
+-- Starting eval on experience 2 (Task 3) from test stream --
+> Eval on experience 2 (Task 3) from test stream ended.
+	ExperienceForgetting/eval_phase/test_stream/Task003/Exp002 = 0.0692
+	General_Acc_Exp/eval_phase/test_stream/Task003/Exp002 = 0.8769
+	General_ECE_Exp/eval_phase/test_stream/Task003/Exp002 = 0.0960
+	General_F1_Exp/eval_phase/test_stream/Task003/Exp002 = 0.9158
+	General_Hamming_Exp/eval_phase/test_stream/Task003/Exp002 = 0.1231
+	General_Jaccard_Exp/eval_phase/test_stream/Task003/Exp002 = 0.8447
+	Loss_Exp/eval_phase/test_stream/Task003/Exp002 = 0.3177
+	Top1_Acc_Exp/eval_phase/test_stream/Task003/Exp002 = 0.8769
+-- Starting eval on experience 3 (Task 4) from test stream --
+> Eval on experience 3 (Task 4) from test stream ended.
+	ExperienceForgetting/eval_phase/test_stream/Task004/Exp003 = 0.0866
+	General_Acc_Exp/eval_phase/test_stream/Task004/Exp003 = 0.9091
+	General_ECE_Exp/eval_phase/test_stream/Task004/Exp003 = 0.1379
+	General_F1_Exp/eval_phase/test_stream/Task004/Exp003 = 0.9163
+	General_Hamming_Exp/eval_phase/test_stream/Task004/Exp003 = 0.0909
+	General_Jaccard_Exp/eval_phase/test_stream/Task004/Exp003 = 0.8456
+	Loss_Exp/eval_phase/test_stream/Task004/Exp003 = 0.2294
+	Top1_Acc_Exp/eval_phase/test_stream/Task004/Exp003 = 0.9091
+-- Starting eval on experience 4 (Task 5) from test stream --
+> Eval on experience 4 (Task 5) from test stream ended.
+	General_Acc_Exp/eval_phase/test_stream/Task005/Exp004 = 0.9627
+	General_ECE_Exp/eval_phase/test_stream/Task005/Exp004 = 0.0822
+	General_F1_Exp/eval_phase/test_stream/Task005/Exp004 = 0.9741
+	General_Hamming_Exp/eval_phase/test_stream/Task005/Exp004 = 0.0373
+	General_Jaccard_Exp/eval_phase/test_stream/Task005/Exp004 = 0.9496
+	Loss_Exp/eval_phase/test_stream/Task005/Exp004 = 0.1330
+	Top1_Acc_Exp/eval_phase/test_stream/Task005/Exp004 = 0.9627
+-- Starting eval on experience 5 (Task 6) from test stream --
+> Eval on experience 5 (Task 6) from test stream ended.
+	General_Acc_Exp/eval_phase/test_stream/Task006/Exp005 = 0.7817
+	General_ECE_Exp/eval_phase/test_stream/Task006/Exp005 = 0.1420
+	General_F1_Exp/eval_phase/test_stream/Task006/Exp005 = 0.7845
+	General_Hamming_Exp/eval_phase/test_stream/Task006/Exp005 = 0.2183
+	General_Jaccard_Exp/eval_phase/test_stream/Task006/Exp005 = 0.6454
+	Loss_Exp/eval_phase/test_stream/Task006/Exp005 = 0.4732
+	Top1_Acc_Exp/eval_phase/test_stream/Task006/Exp005 = 0.7817
+-- Starting eval on experience 6 (Task 7) from test stream --
+> Eval on experience 6 (Task 7) from test stream ended.
+	General_Acc_Exp/eval_phase/test_stream/Task007/Exp006 = 0.7824
+	General_ECE_Exp/eval_phase/test_stream/Task007/Exp006 = 0.1456
+	General_F1_Exp/eval_phase/test_stream/Task007/Exp006 = 0.7662
+	General_Hamming_Exp/eval_phase/test_stream/Task007/Exp006 = 0.2176
+	General_Jaccard_Exp/eval_phase/test_stream/Task007/Exp006 = 0.6210
+	Loss_Exp/eval_phase/test_stream/Task007/Exp006 = 0.4508
+	Top1_Acc_Exp/eval_phase/test_stream/Task007/Exp006 = 0.7824
+-- >> End of eval phase << --
+	ConfusionMatrix_Stream/eval_phase/test_stream = 
+tensor([[527,  52],
+        [117, 560]])
+	Loss_Stream/eval_phase/test_stream/Task007 = 0.3108
+	StreamForgetting/eval_phase/test_stream = 0.0838
+-- >> Start of training phase << --
+-- Starting training on experience 5 (Task 6) from train stream --
+Epoch 0 ended.
+	Loss_Epoch/train_phase/train_stream/Task006 = 0.2372
+-- >> End of training phase << --
+-- >> Start of eval phase << --
+-- Starting eval on experience 0 (Task 1) from test stream --
+> Eval on experience 0 (Task 1) from test stream ended.
+	ExperienceForgetting/eval_phase/test_stream/Task001/Exp000 = 0.2517
+	General_Acc_Exp/eval_phase/test_stream/Task001/Exp000 = 0.7413
+	General_ECE_Exp/eval_phase/test_stream/Task001/Exp000 = 0.2494
+	General_F1_Exp/eval_phase/test_stream/Task001/Exp000 = 0.6838
+	General_Hamming_Exp/eval_phase/test_stream/Task001/Exp000 = 0.2587
+	General_Jaccard_Exp/eval_phase/test_stream/Task001/Exp000 = 0.5195
